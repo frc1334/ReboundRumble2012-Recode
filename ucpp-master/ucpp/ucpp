@@ -1,0 +1,37 @@
+#! /bin/bash
+
+cmd="$1"
+shift
+
+# Options
+
+if [ "x$cmd" = "x-s" ]; then
+	export UCPP_SILENT=yes
+	cmd="$1"
+	shift
+elif [ "x$cmd" = "x-y" ]; then
+	export UCPP_FORCE=yes
+	cmd="$1"
+	shift
+fi
+
+
+# Call the actual command
+
+if command -v ucpp-$cmd >& /dev/null; then
+	exec ucpp-$cmd "$@"
+fi
+
+cat <<EOF
+Usage: ucpp [-s|-y] COMMAND [ARGS]
+
+  -s        Don't prompt for input, just exit
+  -y		Force yes on prompts
+
+Commands:
+  setup     Set global ucpp settings (required before running other commands)
+  init      Configure current directory as a UCPP project
+  configure Generate makefiles for this project
+
+See 'ucpp help <command>' for more information on a specific command.
+EOF
