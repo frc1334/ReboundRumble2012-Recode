@@ -2,4 +2,4 @@ language: cpp
 compiler:
   - gcc
   - clang
-script: export PATH=$PATH:./ucpp-master/ucpp && ucpp setup -t 1334 && ucpp init && ucpp configure py && make
+script: apt-get install wine && export PATH=$PATH:./ucpp-master/ucpp && ucpp setup -t 1334 && ucpp init && ucpp configure py && make
