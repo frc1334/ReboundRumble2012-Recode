@@ -1,0 +1,4 @@
+cd /
+cd ni-rt
+cd system
+put ReboundRumble2012-Recode/Debug/ReboundRumble2012-Recode.out FRC_UserProgram.out
