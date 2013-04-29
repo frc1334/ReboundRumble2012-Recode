@@ -1,0 +1,39 @@
+Version 0.0.2
+
+---
+Name: ReboundRumble2012-Recode
+Base: Robot
+Children:
+- Name: Subsystems
+  Base: Subsystems
+  Children: []
+  Properties: {}
+- Name: Operator Interface
+  Base: OI
+  Children: []
+  Properties: {}
+- Name: Commands
+  Base: Commands
+  Children: []
+  Properties: {}
+Properties:
+  Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+    name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
+  Wiring File: !!robotbuilder.data.properties.FileProperty {default: '', extension: html,
+    folder: false, name: Wiring File, validators: null, value: /home/joseph/workspace/ReboundRumble2012-Recode/wiring.html}
+  C++ Windriver Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Windriver\workspace',
+    extension: null, folder: true, name: C++ Windriver Workspace, validators: null,
+    value: /home/joseph/workspace}
+  Use Default Java Package: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Use Default Java Package, validators: null, value: true}
+  Java Package: !!robotbuilder.data.properties.StringProperty {default: org.usfirst.frc0000,
+    name: Java Package, validators: null, value: org.usfirst.frc0000}
+  Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Export Subsystems, validators: null, value: true}
+  Team Number: !!robotbuilder.data.properties.IntegerProperty {default: 0, name: Team Number,
+    validators: null, value: 1334}
+  Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Export Commands, validators: null, value: true}
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: /home/joseph/NetBeansProjects,
+    extension: null, folder: true, name: Java Project Directory, validators: null,
+    value: /home/joseph/NetBeansProjects}
