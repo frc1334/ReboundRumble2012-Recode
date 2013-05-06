@@ -1,5 +1,0 @@
-cd /
-cd ni-rt
-cd system
-delete FRC_UserProgram.out
-quit
