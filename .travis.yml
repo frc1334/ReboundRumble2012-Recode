@@ -8,4 +8,8 @@ before_script:
   - unzip -o ./master.zip
 env:
   - PATH=$PATH:./ucpp-master/ucpp
+branches:
+  only:
+    - master
+    - testing
 script: ucpp setup -t 1334 && ucpp init && ucpp configure py && make
