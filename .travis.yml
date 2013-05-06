@@ -4,8 +4,7 @@ compiler:
 before_script:
   - sudo apt-get update -qq
   - sudo apt-get install -qq wine
-  - curl -o ./master.zip  https://github.com/nikitakit/ucpp/archive/master.zip
-  - ls .
+  - curl -L -o ./master.zip  https://github.com/nikitakit/ucpp/archive/master.zip
   - unzip ./master.zip
 env:
   - PATH=$PATH:./ucpp-master/ucpp
