@@ -6,7 +6,10 @@
 *.lai
 *.la
 *.a
-PPC603GNU
+PPC603gnu
 #*#
 *~
 .#*~
+.result
+.ucpp
+Makefile
