@@ -1,1 +1,4 @@
-* text=auto
+*.bat text=crlf
+*.sh text=lf
+*.yml text=lf
+* text
